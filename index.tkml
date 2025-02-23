@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TKML App</title>
+    <link rel="stylesheet" href="./styles.min.css">
+    <script src="./tkml.min.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        const container = document.getElementById('container');
+        const tkml = new TKML(container, { dark: true });
+        tkml.load('index.tkml');
+    </script>
+</body>
+</html>
